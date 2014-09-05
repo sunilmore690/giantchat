@@ -34,8 +34,8 @@ function handleUserLeft(msg) {
     },10000)
 
 }
- 
-socket = io.connect("http://localhost:3000");
+ console.log(location.host);
+socket = io.connect(location.host);
  
 function setFeedback(fb) {
   $('span#feedback').html(fb);
